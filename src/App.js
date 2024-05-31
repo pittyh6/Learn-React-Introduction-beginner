@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-const h1 = <h1>Hello world</h1>;
+
 function App() {
+  const h1 = <h1>Hello world</h1>;
   return (
-    h1
+    <>
+      < p > Hello world</p >
+    </>
   );
 }
 
