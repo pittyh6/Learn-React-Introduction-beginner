@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 function App() {
   const h1 = <h1>Hello world</h1>;
@@ -22,6 +24,10 @@ function App() {
       </article>
     </div>
   );
+
+  const container = document.getElementById('app');
+  const root = createRoot(container);
+  root.render(<h1>Hello world</h1>);
   return (
     <>
       < p > Hello world</p >
