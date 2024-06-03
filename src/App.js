@@ -29,9 +29,7 @@ function App() {
   const root = createRoot(container);
   root.render(<h1>Hello world</h1>);
   return (
-    <>
-      < p > Hello world</p >
-    </>
+    <div className="app">Hi</div>
   );
 }
 
