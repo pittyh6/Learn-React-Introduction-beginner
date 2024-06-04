@@ -28,6 +28,18 @@ function App() {
   const container = document.getElementById('app');
   const root = createRoot(container);
   root.render(<h1>Hello world</h1>);
+
+  //render variable
+  const container = document.getElementById('app');
+  const root = createRoot(container);
+  const myList = (
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  )
+  root.render(myList);
   return (
     <div className="app">Hi</div>
   );
