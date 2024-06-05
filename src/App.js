@@ -40,6 +40,10 @@ function App() {
     </ul>
   )
   root.render(myList);
+
+  //advanced JSX
+  const myDiv = <div className="big">I AM A BIG DIV</div>
+  root.render(myDiv)
   return (
     <div className="app">Hi</div>
   );
