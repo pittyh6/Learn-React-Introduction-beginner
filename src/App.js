@@ -61,7 +61,9 @@ function App() {
   );
   //curly braces
   root.render(<h1>{2 + 3}</h1>);
-  //
+  //pi
+  const math = <h1>2 + 3  = {2 + 3}</h1>
+
 
 
 
