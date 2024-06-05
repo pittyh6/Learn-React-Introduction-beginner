@@ -40,7 +40,7 @@ function App() {
     </ul>
   )
   root.render(myList);
-
+  //------------------------
   //advanced JSX class x className
   const myDiv = <div className="big">I AM A BIG DIV</div>
   root.render(myDiv)
@@ -59,7 +59,13 @@ function App() {
       </article>
     </div>
   );
+  //curly braces
+  root.render(<h1>{2 + 3}</h1>);
+  //
 
+
+
+  // -------------------------
   return (
     <div className="app">Hi</div>
   );
