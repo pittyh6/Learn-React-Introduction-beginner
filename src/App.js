@@ -63,6 +63,10 @@ function App() {
   root.render(<h1>{2 + 3}</h1>);
   //pi
   const math = <h1>2 + 3  = {2 + 3}</h1>
+  // variable in JSX
+  const root = createRoot(container);
+  const theBestString = 'This text was accessed through a javascript variable';
+  root.render(<h1>{theBestString}</h1>);
 
 
 
