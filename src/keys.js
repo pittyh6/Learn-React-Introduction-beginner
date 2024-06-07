@@ -7,7 +7,7 @@ const people = ['Rowe', 'Prevost', 'Gare'];
 
 const peopleList = people.map((person, i) =>
     // expression goes here:
-    <li>{person}</li>;
+    <li key={"person_" + i}>{person}</li>;
 );
 
 // root.render goes here:
