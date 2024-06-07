@@ -120,6 +120,9 @@ function App() {
   };
   const img = <img src={pics[coinToss() === 'heads' ? 'kitty' : 'doggy']} />;
   root.render(img);
+  //JSX Conditionals: &&
+
+
 
   // -------------------------
   return (
