@@ -67,7 +67,15 @@ function App() {
   const root = createRoot(container);
   const theBestString = 'This text was accessed through a javascript variable';
   root.render(<h1>{theBestString}</h1>);
-
+  //variable attributes in jsx
+  const goose = 'https://content.codecademy.com/courses/React/react_photo-goose.jpg';
+  const gooseImg = (
+    <img
+      src={goose}
+    />
+  )
+  root.render(gooseImg);
+  //
 
 
 
