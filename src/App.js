@@ -63,10 +63,12 @@ function App() {
   root.render(<h1>{2 + 3}</h1>);
   //pi
   const math = <h1>2 + 3  = {2 + 3}</h1>
+
   // variable in JSX
   const root = createRoot(container);
   const theBestString = 'This text was accessed through a javascript variable';
   root.render(<h1>{theBestString}</h1>);
+
   //variable attributes in jsx
   const goose = 'https://content.codecademy.com/courses/React/react_photo-goose.jpg';
   const gooseImg = (
@@ -75,6 +77,7 @@ function App() {
     />
   )
   root.render(gooseImg);
+
   //Event Listener 
   function makeDoggy(e) {
     // Call this extremely useful function on an <img>.
@@ -88,7 +91,23 @@ function App() {
       alt="kitty" onClick={makeDoggy} />
   );
   root.render(kitty);
-  //
+
+  // JSX Conditionals: If Statements That Do Work
+  function coinToss() {
+    // This function will randomly return either 'heads' or 'tails'.
+    return Math.random() < 0.5 ? 'heads' : 'tails';
+  }
+  const pics = {
+    kitty: 'https://content.codecademy.com/courses/React/react_photo-kitty.jpg',
+    doggy: 'https://content.codecademy.com/courses/React/react_photo-puppy.jpeg'
+  };
+  let img;
+  if (coinToss() == 'heads') {
+    img = <img src={pics.kitty} />
+  } else {
+    img = <img src={pics.doggy} />
+  }
+  root.render(img)
 
 
   // -------------------------
