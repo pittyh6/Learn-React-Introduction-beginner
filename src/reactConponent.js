@@ -5,7 +5,7 @@ import React from 'react';
 function MyComponent() {
     return <h1>Hello, this is a function component body.</h1>;
 }
-
+export default MyComponent
 
 
 
@@ -16,6 +16,8 @@ function MyComponent() {
 //index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import MyComponent from './App';
+
 
 
 
